@@ -212,6 +212,8 @@
 \usetikzlibrary{patterns}
 
 
+\usepackage{multicol}
+
 % The aalto-thesis package provides typesetting instructions for the
 % standard master's thesis parts (abstracts, front page, and so on)
 % Load this package second-to-last, just before the hyperref package.
@@ -271,11 +273,11 @@
 \newcommand{\TITLE}{Selling Services for Limited Liability Housing Companies}
 \newcommand{\FTITLE}{Palveluiden myynti taloyhtiöille}
 %\newcommand{\STITLE}{Den stora stygga vargen:}
-\newcommand{\SUBTITLE}{Bringing customers into focus}
+\newcommand{\SUBTITLE}{Bringing Customers into Focus}
 \newcommand{\FSUBTITLE}{Asiakkaat keskiöön}
 %\newcommand{\SSUBTITLE}{Lilla Vargens universum}
-\newcommand{\DATE}{February 14, 2018}
-\newcommand{\FDATE}{14. helmikuuta 2018}
+\newcommand{\DATE}{November 24, 2019}
+\newcommand{\FDATE}{24. marraskuuta 2019}
 %\newcommand{\SDATE}{Den 18 februari 2018}
 
 % Supervisors and instructors
@@ -326,11 +328,9 @@
 \newcommand{\FPROFESSORSHIP}{Informaatioverkostot}
 %\newcommand{\SPROFESSORSHIP}{Datateknik}
 % Professorship code is the same in all languages
-\newcommand{\PROFCODE}{SCI3042}
-\newcommand{\KEYWORDS}{ocean, sea, marine, ocean mammal, marine
-  mammal, whales, cetaceans, dolphins}
-\newcommand{\FKEYWORDS}{aineistot, aitta, akustiikka, Alankomaat,
-aluerakentaminen, aapinen, ankka, aasinsilta}
+\newcommand{\PROFCODE}{SCI3047}
+\newcommand{\KEYWORDS}{energy industry, limited liability housing company, purchase decision, customer centricity, service selling}
+\newcommand{\FKEYWORDS}{energia-ala, taloyhtiö, ostopäätöksen tekeminen, asiakaskeskeisyys, palvelumyynti}
 %\newcommand{\SKEYWORDS}{omsättning, kassaflöde, värdepappersmarknadslagen,
 %yrkesutövare, intresseföretag, verifieringskedja}
 \newcommand{\LANGUAGE}{English}
@@ -421,50 +421,21 @@ aluerakentaminen, aapinen, ankka, aasinsilta}
 % Abstract in English
 % ------------------------------------------------------------------
 \thesisabstract{english}{
-The abstract provides goal, motivation, background, and conclusions of
-the work. It has to fit to one page together with the bibliographical
-information. 
+Digitalisation offers a lot of new opportunities for energy industry in Finland, especially in service business related to district heating. In addition, limited liability housing companies expectations and needs are driving the change in the industry. However, limited liability housing companies as customers are somewhat unknown group who's operations are seen slow and difficult.
 
-If the thesis is in English and the language of school
-education is Finnish or Swedish, the abstract is written in English
-and in Finnish or in Swedish. If the language of school education is
-other than Finnish or Swedish, the abstract is written in English only.
+This thesis aims to increase the knowledge and understanding on how the limited liability housing companies make purchase decisions by conducting semi-structured interviews with the board members of the limited liability housing companies. Then, that knowledge is used to find out how the sales process could be improved. In addition, the ambition is to facilitate customer centricity in the energy industry by focusing on the customers. The empirical study follows the design science research methodology.
 
-The thesis example file (\texttt{thesis-example.tex}), all the chapter content
-files (\texttt{1introduction.tex} and so on), and the Aalto style file
-(\texttt{aalto-thesis.sty}) are commented with explanations on how the Aalto
-thesis works. The files also contain some examples on how to customize various
-details of the thesis layout, and of course the example text works as an
-example in itself. Please read the comments and the example text; that should
-get you well on your way!
-
-In the thesis template, you can find the text of the abstract in the
-abstract in the \texttt{thesis-example.tex}
-file, together with the bibliographical information of the abstract tables.
-\fixme{This is an example how to use fixme: add your abstract here.} 
-Fixme is a command that helps you identify parts of your thesis that still
-require some work. When compiled in the custom \texttt{mydraft} mode, text
-parts tagged with fixmes are shown in bold and with fixme tags around them. When
-compiled in normal mode, the fixme-tagged text is shown normally (without
-special formatting). The draft mode also causes the ``Draft'' text to appear on
-the front page, alongside with the document compilation date. The custom
-\texttt{mydraft} mode is selected by the \texttt{mydraft} option given for the
-package \texttt{aalto-thesis}, near the top of the \texttt{thesis-example.tex}
-file.
-
-The instructions on how to compile LaTeX *.tex files to *.pdf files like this 
-are giving in the \texttt{thesis-example.tex} file as comments and also in this 
-pdf in a}
+The results of the study indicate, that the limited liability housing company’s purchase decision making is affected by the motivation of the board, the deputy landlord’s role and board culture. Moreover, the limited liability housing companies should not be considered as business customers. The results also indicate, that the sales process should be more customer-centric and designed in a way that it provides consulting and support for the members of the board in a limited liability housing company.
+}
 
 % Abstract in Finnish
 % ------------------------------------------------------------------
 \thesisabstract{finnish}{
-Jos koulusivistyskielesi on suomi, diplomityössä pitää olla
-suomenkielinen tiivistelmä. Tiivistelmän pitää mahtua yhdelle
-sivulle.
+Digitalisaatio tarjoaa paljon uusia mahdollisuuksia Suomen energia-alalle, etenkin kaukolämpöön liittyvässä palvelumyynnissä. Lisäksi taloyhtiöiden odotukset ja tarpeet ajavat energia-alan muutosta. Haasteena on, että taloyhtiöistä tiedetään asiakasryhmänä vähän ja heidän toimintaa pidetään hitaana ja vaikeana.
 
-Tiivistelmässä on yleensä useampia kappaleita. Tiivistelmä kertoo työn
-tavoitteet, motivaation, taustan ja johtopäätökset.
+Tämän tutkimuksen tavoitteena on haastattelemalla taloyhtiön hallituksen jäseniä lisätä tietoa ja ymmärrystä siitä, miten taloyhtiöt tekevät ostopäätöksiä. Haastattelut noudattavat semistrukturoitua teemahastattelua. Tätä tietoa hyödyntämällä selvitetään, miten myyntiprosessia voitaisiin parantaa. Lisäksi tutkimuksen tavoitteena on fasilitoida asiakaskeskeistä ajattelua energia-alalla. Empiirinen tutkimus noudattaa suunnittelututkimuksen viitekehystä.
+
+Tutkimuksen tulosten mukaan taloyhtiöiden ostopäätökseen vaikuttavat motivaatio, isännöitsijän rooli ja hallituksen kulttuuri. Taloyhtiöitä ei myöskään pitäisi ajatella yritysasiakkaana vaan yksityisasiakkaana. Tulokset osoittavat myös, että myyntiprosessin pitäisi olla asiakaskeskeisempi ja suunniteltu niin, että taloyhtiön hallituksen jäsenille on tarjolla konsultointia ja tukea päätöksen tekemiseen.
 }
 
 % Acknowledgements
@@ -478,15 +449,27 @@ tavoitteet, motivaation, taustan ja johtopäätökset.
 
 % The star means that the chapter isn't numbered and does not 
 % show up in the TOC
-\chapter*{Acknowledgements}
+\chapter*{Esipuhe}
 
-It has been a long and bumpy road to this point where I can say that I am done with school.
+"\textit{Sehän kuulostaa jopa sellaiselta, minkä minäkin voin ymmärtää.}" Kommentoi 84-vuotias mummoni, kun kerroin hänelle dippa-aiheeni. Toivon lopputuotoksenkin olevan siis yhtä ymmärrettävä.
 
-Thank you, and keep up the good work!
-\vskip 10mm
+Tuntuu mahtavalta, että näiden kouluvuosien jälkeen voi hyvillä mielin jättää pulpetit ja luentokalvot taakseen, ainakin toistaiseksi. Kun aloitin opiskelut AMK:ssa, en ajatellut, että jossain vaiheessa kirjoittaisin dippatyöni esipuhetta, tässä sitä kuitenkin ollaan.
 
-\noindent Espoo, \DATE
+Kiitos Leanheatille mahdollisuudesta tehdä dippa mielenkiintoisesta ja monipuolisesta aiheesta. Kiitos erityisesti Kanava-tiimille (Jussi, Ossi, Tapio) tuesta ja sparrauksesta. Kiitos myös pelikavereille Fußball-pöydän ääressä, ilman pelitaukoja dippa olisi saattanut jäädä pöytälaatikkoon tai tässä tapauksessa pilvipalveluun.
+
+Ristolle kiitos kannustuksesta, uskon valamisesta ja keskusteluhetkistä, joiden jälkeen oli, ainakin hetken aikaa, selvä fiilis omasta tekemisestä. Minnalle kiitos tuesta ja avusta omien ajatusten selkeyttämisessä sekä arvokkaasta palautteesta.
+
+Ystäviä haluan kiittää yhteisistä hetkistä, jotka ovat auttaneet unohtamaan dippaprojektin oikeilla hetkillä. Kiitos erityisesti Jennalle, joka on tarponut Aaltoilevalla polulla yhtä aikaa ja, jonka kanssa on kertynyt hyviä muistoja Aalto-ajalta. Kiitos myös Teemolle, jonka vinkit ovat olleet vähintäänkin ajatuksia herättäviä niin tämän työn kuin elämänkin suhteen. 
+
+Viimeiseksi suuret kiitokset perheelleni, joka on aina ollut tukenani ja kannustanut eteenpäin. Isoveljeäni hoputan myös valmistumaan, jotta saadaan kunnon kekkerit järkättyä.
+
 \vskip 5mm
+
+\noindent \emph{Voisin tehdä mitä tahansa enkä kumminkaan tee yhtään mitään. Voi miten hauskaa on tehdä ihan mitä haluaa.} (Mymmeli)
+\vskip 7mm
+
+\noindent Espoossa, 24.11.2019
+\vskip 3mm
 \noindent\AUTHOR
 
 % Acronyms
@@ -496,7 +479,7 @@ Thank you, and keep up the good work!
 % start correctly on the right-hand side.
 \cleardoublepage
 % Example acronyms are placed in a separate file, acronyms.tex
-\input{acronyms}
+%\input{acronyms}
 
 % Table of contents
 % ------------------------------------------------------------------
@@ -560,8 +543,8 @@ Thank you, and keep up the good work!
 % Appendices go here
 % ------------------------------------------------------------------
 % If you do not have appendices, comment out the following lines
-\appendix
-\input{appendices.tex}
+%\appendix
+%\input{appendices.tex}
 
 % End of document!
 % ------------------------------------------------------------------
